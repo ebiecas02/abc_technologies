@@ -1,0 +1,7 @@
+---
+-hosts: kubernetes
+become: true
+
+tasks:
+- name: Deploy ABC Technologies Retail Module on Kubernetes
+command: kubectl apply -f /root/abctechnologies-deploy.yml
